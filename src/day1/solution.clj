@@ -1,7 +1,7 @@
-(ns solution
+(ns day1.solution
   (:require [clojure.string :as cstr]))
 
-(def input (slurp "./day1/input-big.txt"))
+(def input (slurp "./src/day1/input-big.txt"))
 
 (->> (cstr/split input #"\n")
      (partition-by empty?)
